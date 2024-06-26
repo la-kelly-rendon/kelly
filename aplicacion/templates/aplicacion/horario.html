@@ -1,0 +1,45 @@
+{% extends 'inicio.html' %} 
+{% load static %} 
+{% block content %}
+<nav class=" mt-3 p-3">
+    <a href="#" class="me-4">Inicio</a>
+    <a href="#" class="me-4">Profesores</a>
+    <a href="#" class="me-4">Estudiantes</a>
+    <a href="#">Horario</a>
+</nav>
+<br>
+<div class="border p-3">
+    <div>Nuevo</div>
+<button type="submit" class="mt-3">Nuevo Horario</button>
+
+</div>
+<div class="border mt-5 p-3 mb-5 ">
+  <div class="mt-4 mb-4">Datos</div>
+
+<table class="table border">
+    <thead>
+      <tr>
+        <th scope="col">colum1</th>
+        <th scope="col">colum2</th>
+        <th scope="col">colum3</th>
+        <th scope="col">colum4</th>
+        <th scope="col">Editar</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider ">
+      <tr>
+        <td>conte1</td>
+        <td>conte2</td>
+        <td>conte3</td>
+        <td>conte4</td>
+        <td><button type="submit">Editar</button>
+          <button type="submit">Eliminar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  
+
+{% endblock %}  

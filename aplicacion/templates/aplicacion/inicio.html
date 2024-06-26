@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% load static %}
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <link
+    href="{% static 'aplicacion'%}/vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{% static 'aplicacion' %}/css/uno.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Osmanya&family=Permanent+Marker&family=Pompiere&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container border">
+        <div class="row p-2 encabezado">
+            <div class="col titulo mt-3"><h1>Escuela:"El Porvenir"</h1></div>
+            <div class="col"> <img class="imagen" src="{% static 'aplicacion'%}/img/logo.png" alt=""></div>
+        </div>
+        {% block content  %}
+
+
+{% endblock %}
+        
+          <div class="row encabezado p-3">
+            <footer>
+              <a href="#">Contactanos</a>
+            </footer>
+          </div>
+    </div>
+    <script src="{% static 'aplicacion'%}/vendor/jquery/jquery.min.js"></script>
+    <script src="{% static 'aplicacion'%}/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% extends 'inicio.html' %} 
+{% load static %} 
+{% block content %}
+<nav class=" mt-3 p-3">
+    <a href="#" class="me-4">Inicio</a>
+</nav>
+
+<br>
+<div class="border p-3">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'aplicacion'%}/img/vision.jpg" class="card-img-top border" alt="...">
+        <div class="card-body">
+          <p class="card-text">Mision</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{% static 'aplicacion'%}/img/mision.jpg" class="card-img-top border" alt="...">
+        <div class="card-body">
+          <p class="card-text">Vision</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="border recuadro">
+        <p class="card-text">Servicio</p>
+      </div>
+          
+    </div>
+  </div>
+</div>
+
+
+<br>
+  
+
+{% endblock %}  

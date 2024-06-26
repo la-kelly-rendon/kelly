@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    <h2> Formulario</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <section style="margin: 20px;">
+            <button type="submit">Guardar</button>
+        </section>
+    </form>
+    <section style="margin: 20px;">
+        <a href="{% url 'read' %}">Volver</a>
+    </section>
+</body>
+</html>

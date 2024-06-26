@@ -1,0 +1,16 @@
+<html>
+  <head>
+    {% load static %}
+    <title>Alumno</title>
+  </head>
+  <body>
+    <div class="contenido">
+      <h1>Alumno</h1>
+      <form method="post">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
